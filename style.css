@@ -90,3 +90,10 @@ input {
 #msg-input {
   padding: 4px 8px 6rem;
 }
+.checkbox{
+    margin-top: 1rem;
+    font-family: karla-regular;  
+}
+.checkbox input{
+    margin-right: 1rem;
+}
