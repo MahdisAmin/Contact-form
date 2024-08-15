@@ -33,4 +33,9 @@ body {
     background-color: var(--white);
     height: 300px;
     margin-top: 200px;
+    padding: 40px;
+}
+
+h1{
+    font-family: karla-bold;
 }
