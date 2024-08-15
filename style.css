@@ -1,18 +1,18 @@
 :root {
   --lightgreen: hsl(148, 38%, 91%);
-  --mediumgreen:hsl(169, 82%, 27%);
+  --mediumgreen: hsl(169, 82%, 27%);
   --red: hsl(0, 66%, 54%);
-   --white: hsl(0, 0%, 100%);
-   --mediumgrey: hsl(186, 15%, 59%);
-   --darkgrey: hsl(187, 24%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --mediumgrey: hsl(186, 15%, 59%);
+  --darkgrey: hsl(187, 24%, 22%);
 }
 @font-face {
-    font-family: "karla-bold";
-    src: url("./fonts/static/Karla-Bold.ttf");
+  font-family: "karla-bold";
+  src: url("./fonts/static/Karla-Bold.ttf");
 }
 @font-face {
-    font-family: "karla-regular";
-    src: url("./fonts/static/Karla-Regular.ttf");
+  font-family: "karla-regular";
+  src: url("./fonts/static/Karla-Regular.ttf");
 }
 
 * {
@@ -22,20 +22,44 @@
 }
 
 body {
+  max-width: 1440px;
   background-color: var(--lightgreen);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card-container{
-    width: 1440px;
-    background-color: var(--white);
-    height: 300px;
-    margin-top: 200px;
-    padding: 40px;
+.card-container {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: .5rem;
+  height: auto;
+  margin: 100px 200px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
 }
 
-h1{
-    font-family: karla-bold;
+h1 {
+  font-family: karla-bold;
+}
+.name-container {
+  display: flex;
+  width: 100%;
+   margin-top: 1rem;
+}
+.first-name,
+.last-name {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  width: 100%;
+  font-family: karla-regular;
+}
+.name-container input {
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  outline: none;
+  border-color: transparent;
+  border: 1px solid var(--mediumgrey);
 }
