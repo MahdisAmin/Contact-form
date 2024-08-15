@@ -47,19 +47,25 @@ h1 {
   width: 100%;
    margin-top: 1rem;
 }
-.first-name,
-.last-name {
+.first-name {
   display: flex;
   flex-direction: column;
   margin-right: 50px;
   width: 100%;
   font-family: karla-regular;
 }
-.name-container input {
+input {
   padding: 1rem;
   border-radius: .5rem;
   margin-top: 1rem;
   outline: none;
   border-color: transparent;
   border: 1px solid var(--mediumgrey);
+}
+#email{
+    margin-top: 1rem;
+}
+#email input{
+    width: calc(100% - 45px);
+
 }
