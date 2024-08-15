@@ -1,0 +1,28 @@
+:root {
+  --lightgreen: hsl(148, 38%, 91%);
+  --mediumgreen:hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+   --white: hsl(0, 0%, 100%);
+   --mediumgrey: hsl(186, 15%, 59%);
+   --darkgrey: hsl(187, 24%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--lightgreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container{
+    width: 1440px;
+    background-color: var(--white);
+    height: 300px;
+    margin-top: 200px;
+}
