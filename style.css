@@ -51,7 +51,7 @@ h1 {
 .first-name {
   display: flex;
   flex-direction: column;
-  margin-right: 2.5rem;
+  margin-right: 2rem;
   width: 100%;
   font-family: karla-regular;
 }
@@ -68,7 +68,7 @@ input {
   width: 100%;
 }
 #email input {
-  width: calc(100% - 40px);
+  width: calc(100% - 2rem);
 }
 .radio-container {
   /* width: calc(100% - 38px); */
@@ -79,11 +79,14 @@ input {
 .radio-input {
   border: 1px solid var(--mediumgrey);
   padding: 2px 20px 15px;
-  width: 100%;
-  margin-right: 2.3rem;
+  width: 50%;
+  margin-right: 2rem;
   border-radius: 0.5rem;
 }
 .query-text {
   font-family: karla-regular;
-  margin-top: 25px;
+  margin-top: 1rem;
+}
+#msg-input {
+  padding: 4px 8px 6rem;
 }
