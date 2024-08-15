@@ -83,6 +83,10 @@ input {
   margin-right: 2rem;
   border-radius: 0.5rem;
 }
+.radio-input:hover{
+    border-color: var(--mediumgreen);
+    cursor: pointer;
+}
 .query-text {
   font-family: karla-regular;
   margin-top: 1rem;
