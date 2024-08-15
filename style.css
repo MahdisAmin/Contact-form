@@ -32,7 +32,7 @@ body {
 .card-container {
   width: 100%;
   background-color: var(--white);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   height: auto;
   margin: 100px 200px;
   padding: 40px;
@@ -42,30 +42,48 @@ body {
 h1 {
   font-family: karla-bold;
 }
-.name-container {
+.name-container,
+.radio-container {
   display: flex;
   width: 100%;
-   margin-top: 1rem;
+  margin-top: 1rem;
 }
 .first-name {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
+  margin-right: 2.5rem;
   width: 100%;
   font-family: karla-regular;
 }
 input {
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-top: 1rem;
   outline: none;
   border-color: transparent;
   border: 1px solid var(--mediumgrey);
 }
-#email{
-    margin-top: 1rem;
+#email {
+  margin-top: 1rem;
+  width: 100%;
 }
-#email input{
-    width: calc(100% - 45px);
+#email input {
+  width: calc(100% - 40px);
+}
+.radio-container {
+  /* width: calc(100% - 38px); */
+  justify-content: space-between;
+  font-family: karla-regular;
+}
 
+.radio-input {
+  border: 1px solid var(--mediumgrey);
+  padding: 2px 20px 15px;
+  width: 100%;
+  margin-right: 2.3rem;
+  border-radius: 0.5rem;
+}
+.query-text {
+  font-family: karla-regular;
+  margin-top: 25px;
 }
