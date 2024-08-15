@@ -6,6 +6,14 @@
    --mediumgrey: hsl(186, 15%, 59%);
    --darkgrey: hsl(187, 24%, 22%);
 }
+@font-face {
+    font-family: "karla-bold";
+    src: url("./fonts/static/Karla-Bold.ttf");
+}
+@font-face {
+    font-family: "karla-regular";
+    src: url("./fonts/static/Karla-Regular.ttf");
+}
 
 * {
   margin: 0;
