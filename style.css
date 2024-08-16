@@ -152,7 +152,7 @@ input:hover {
 .alert-msg p {
   margin-top: 1rem;
   font-family: karla-regular;
-  font-size: 20px;
+  font-size: 1rem;
 }
 @keyframes my-alert {
   from {
@@ -168,5 +168,13 @@ input:hover {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes fadingaway {
+ from {
+    opacity: 1;
+  }
+  to {
+    opacity: 2;
   }
 }
