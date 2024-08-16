@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .card-container {
@@ -34,7 +35,7 @@ body {
   background-color: var(--white);
   border-radius: 0.5rem;
   height: auto;
-  margin: 100px 200px;
+  margin: 150px 200px;
   padding: 40px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
 }
@@ -83,9 +84,9 @@ input {
   margin-right: 2rem;
   border-radius: 0.5rem;
 }
-.radio-input:hover{
-    border-color: var(--mediumgreen);
-    cursor: pointer;
+.radio-input:hover {
+  border-color: var(--mediumgreen);
+  cursor: pointer;
 }
 .query-text {
   font-family: karla-regular;
@@ -94,29 +95,78 @@ input {
 #msg-input {
   padding: 4px 8px 6rem;
 }
-.checkbox{
-    margin-top: 1rem;
-    font-family: karla-regular;  
+.checkbox {
+  margin-top: 1rem;
+  font-family: karla-regular;
 }
-.checkbox input{
-    margin-right: 1rem;
+.checkbox input {
+  margin-right: 1rem;
 }
-button{
-    margin-top: 2rem;
-    width: calc(100% - 2rem);
-    padding: 1.2rem;
-    border-radius: 1rem;
-    border: none;
-    background-color: var(--mediumgreen);
-    font-family: karla-bold;
-    font-size: 1rem;
-    color: var(--white);
-    cursor: pointer;
+.checkbox label:hover {
+  cursor: pointer;
 }
-button:hover{
-    background-color: rgb(8, 49, 36);
+button {
+  margin-top: 2rem;
+  width: calc(100% - 2rem);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--mediumgreen);
+  font-family: karla-bold;
+  font-size: 1rem;
+  color: var(--white);
+  cursor: pointer;
 }
-input:hover{
-    border: 2px solid var(--mediumgreen);
-    cursor: pointer;
+button:hover {
+  background-color: rgb(8, 49, 36);
+}
+input:hover {
+  border: 2px solid var(--mediumgreen);
+  cursor: pointer;
+}
+.alert-msg {
+  width: 600px;
+  padding: 2.5rem;
+  background-color: rgb(8, 49, 36);
+  color: var(--white);
+  border-radius: 1rem;
+  position: absolute;
+  top: 10px;
+  animation: my-alert 0.5s;
+  display: none;
+  position: fixed;
+}
+.success-msg-container {
+  display: flex;
+  align-items: center;
+  font-family: karla-bold;
+  font-size: 20px;
+}
+.success-msg-container svg {
+  width: 35px;
+  color: var(--white);
+  fill: var(--white);
+  margin-right: 0.5rem;
+  animation: my-svg ease 3s;
+}
+.alert-msg p {
+  margin-top: 1rem;
+  font-family: karla-regular;
+  font-size: 20px;
+}
+@keyframes my-alert {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+@keyframes my-svg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
