@@ -5,6 +5,8 @@ const email = document.getElementById("email");
 const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const massageInput = document.getElementById("msg-input");
+const radio1 = document.getElementById("general-enquiry");
+const radio2 = document.getElementById("sport-request");
 const inputsArray = [firstName, lastName, email, massageInput];
 console.log(email);
 const isEnailValid = (email) => {
@@ -42,6 +44,12 @@ const checkInputs = () => {
   } else {
     successMessage(email);
   }
+  if (!radio1.checked && !radio2.checked) {
+    errorHandler(document.querySelector(".radio-error"));
+    isInputFilled = false;
+  } else {
+    successMessage(document.querySelector(".radio-error"));
+  }
   return isInputFilled;
 };
 
@@ -72,6 +80,8 @@ const showSuccessMsg = () => {
       input.value = "";
       input.style.borderColor = "";
     });
+    radio1.checked = false;
+    radio2.checked = false;
   }
 };
 SubmitBtn.addEventListener("click", showSuccessMsg);

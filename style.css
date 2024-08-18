@@ -75,6 +75,7 @@ input {
   /* width: calc(100% - 38px); */
   justify-content: space-between;
   font-family: karla-regular;
+  position: relative;
 }
 
 .radio-input {
@@ -88,12 +89,19 @@ input {
   border-color: var(--mediumgreen);
   cursor: pointer;
 }
+.radio-error{
+  position: absolute;
+  top: 50px;
+}
 .query-text {
   font-family: karla-regular;
   margin-top: 1rem;
 }
 #msg-input {
   padding: 4px 8px 6rem;
+}
+#label{
+  margin-top: 2rem;
 }
 .checkbox {
   margin-top: 1rem;
@@ -135,6 +143,7 @@ input:hover {
   animation: my-alert 0.5s;
   display: none;
   position: fixed;
+  z-index: 2;
 }
 .success-msg-container {
   display: flex;

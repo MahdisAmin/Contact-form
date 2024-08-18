@@ -44,34 +44,34 @@
         </div>
         <div>
             <p class="query-text">Query type <sup>*</sup></p>
-        </div>
-        <div class="radio-container">
-
-            <div class="radio-input">
-                <div>
-                    <input type="radio">
-                    <label for="">General Enquiry</label>
+            <div class="radio-container">
+                <div class="radio-input">
+                    <div>
+                        <input type="radio" id="general-enquiry" name="query-type">
+                        <label for="general-enquiry">General Enquiry</label>
+                    </div>
                 </div>
+                <div class="radio-input">
+                    <input type="radio" id="sport-request" name="query-type">
+                    <label for="sport-request">Sport Request</label>
+                </div>
+                <span class="radio-error error">Please select a query type</span>
             </div>
-            <div class="radio-input">
-                <input type="radio">
-                <label for="">Sport Request</label>
-            </div>
-        </div>
-        <div class="first-name email">
-            <label for="">Message<sup>*</sup></label>
-            <input type="text" id="msg-input">
-            <span class="first-name error">This field is required</span>
 
+            <div class="first-name email">
+                <label for="" id="label">Message<sup>*</sup></label>
+                <input type="text" id="msg-input">
+                <span class="first-name error">This field is required</span>
+
+            </div>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">
+                    I constent to being contacted by team<sup>*</sup>
+                </label>
+            </div>
+            <button>Submit</button>
         </div>
-        <div class="checkbox">
-            <input type="checkbox">
-            <label for="">
-                I constent to being contacted by team<sup>*</sup>
-            </label>
-        </div>
-        <button>Submit</button>
-    </div>
     </div>
     <script src="./app.js"></script>
 </body>
