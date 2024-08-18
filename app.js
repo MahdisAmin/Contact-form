@@ -6,11 +6,17 @@ const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const massageInput = document.getElementById("msg-input");
 const inputsArray = [firstName, lastName, email, massageInput];
+console.log(email);
+const isEnailValid = (email) => {
+  const emailPatern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPatern.test(email);
+};
+
 const checkInputs = () => {
   const firstNameValue = firstName.value.trim();
   const lastNameValue = lastName.value.trim();
   const massageInputValue = massageInput.value.trim();
-
+  const emailValue = email.value.trim();
   let isInputFilled = true;
   if (firstNameValue === "") {
     errorHandler(firstName);
@@ -29,6 +35,12 @@ const checkInputs = () => {
     isInputFilled = false;
   } else {
     successMessage(massageInput);
+  }
+  if (emailValue === "" || !isEnailValid(emailValue)) {
+    errorHandler(email);
+    isInputFilled = false;
+  } else {
+    successMessage(email);
   }
   return isInputFilled;
 };
@@ -61,6 +73,5 @@ const showSuccessMsg = () => {
       input.style.borderColor = "";
     });
   }
-
 };
 SubmitBtn.addEventListener("click", showSuccessMsg);
