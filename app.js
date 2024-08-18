@@ -1,6 +1,5 @@
 const SubmitBtn = document.querySelector("button");
 const showAlertSuccess = document.querySelector(".alert-msg");
-// const errorInpusMsg = document.querySelectorAll(".error");
 const email = document.getElementById("email");
 const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
@@ -9,7 +8,19 @@ const radio1 = document.getElementById("general-enquiry");
 const radio2 = document.getElementById("support-request");
 const checkbox = document.getElementById("conset-checkbox");
 const inputsArray = [firstName, lastName, email, massageInput];
-console.log(email);
+
+inputsArray.forEach((input) => {
+  input.addEventListener("paste", (event) => {
+    event.preventDefault();
+  });
+
+  input.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
+});
+// document.addEventListener("contextmenu", (e) => {
+//   e.preventDefault();
+// });
 const isEnailValid = (email) => {
   const emailPatern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailPatern.test(email);
@@ -90,7 +101,7 @@ const showSuccessMsg = () => {
     });
     radio1.checked = false;
     radio2.checked = false;
-    checkbox.checked=false
+    checkbox.checked = false;
   }
 };
 SubmitBtn.addEventListener("click", showSuccessMsg);
