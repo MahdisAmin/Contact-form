@@ -1,27 +1,27 @@
 :root {
   --lightgreen: hsl(148, 38%, 91%);
   --mediumgreen: hsl(169, 82%, 27%);
-  --red: hsl(0, 66%, 54%);
+  --red: #d73c3c;
   --white: hsl(0, 0%, 100%);
   --mediumgrey: hsl(186, 15%, 59%);
-  --darkgrey: hsl(187, 24%, 22%);
+  --darkgrey: #2b4246;
 }
 @font-face {
   font-family: "karla-bold";
   src: url("./fonts/static/Karla-Bold.ttf");
 }
-
 @font-face {
   font-family: "karla-regular";
   src: url("./fonts/static/Karla-Regular.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  width: 100%;
   max-width: 1440px;
   background-color: var(--lightgreen);
   display: flex;
@@ -35,7 +35,7 @@ body {
   background-color: var(--white);
   border-radius: 0.5rem;
   height: auto;
-  margin: 120px 200px;
+  margin: 150px 200px;
   padding: 40px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
 }
@@ -43,14 +43,12 @@ body {
 h1 {
   font-family: karla-bold;
 }
-
 .name-container,
 .radio-container {
   display: flex;
   width: 100%;
   margin-top: 1rem;
 }
-
 .first-name {
   display: flex;
   flex-direction: column;
@@ -58,7 +56,6 @@ h1 {
   width: 100%;
   font-family: karla-regular;
 }
-
 input {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -67,20 +64,17 @@ input {
   border-color: transparent;
   border: 1px solid var(--mediumgrey);
 }
-
 .email {
   margin-top: 1rem;
   width: 100%;
 }
-
 .email input {
   width: calc(100% - 2rem);
 }
-
 .radio-container {
+  /* width: calc(100% - 38px); */
   justify-content: space-between;
   font-family: karla-regular;
-  position: relative;
 }
 
 .radio-input {
@@ -90,39 +84,27 @@ input {
   margin-right: 2rem;
   border-radius: 0.5rem;
 }
-
 .radio-input:hover {
   border-color: var(--mediumgreen);
   cursor: pointer;
-}
-.break{
-  position: absolute;
-  top: 50px;
 }
 .query-text {
   font-family: karla-regular;
   margin-top: 1rem;
 }
-#label{
-  margin-top: 30px;
-}
 #msg-input {
   padding: 4px 8px 6rem;
 }
-
 .checkbox {
   margin-top: 1rem;
   font-family: karla-regular;
 }
-
 .checkbox input {
   margin-right: 1rem;
 }
-
 .checkbox label:hover {
   cursor: pointer;
 }
-
 button {
   margin-top: 2rem;
   width: calc(100% - 2rem);
@@ -135,16 +117,13 @@ button {
   color: var(--white);
   cursor: pointer;
 }
-
 button:hover {
   background-color: rgb(8, 49, 36);
 }
-
 input:hover {
   border: 2px solid var(--mediumgreen);
   cursor: pointer;
 }
-
 .alert-msg {
   width: 600px;
   padding: 2.5rem;
@@ -157,14 +136,12 @@ input:hover {
   display: none;
   position: fixed;
 }
-
 .success-msg-container {
   display: flex;
   align-items: center;
   font-family: karla-bold;
   font-size: 20px;
 }
-
 .success-msg-container svg {
   width: 35px;
   color: var(--white);
@@ -172,13 +149,11 @@ input:hover {
   margin-right: 0.5rem;
   animation: my-svg ease 3s;
 }
-
 .alert-msg p {
   margin-top: 1rem;
   font-family: karla-regular;
   font-size: 1rem;
 }
-
 @keyframes my-alert {
   from {
     transform: translateX(-500px);
@@ -187,7 +162,6 @@ input:hover {
     transform: translateX(10px);
   }
 }
-
 @keyframes my-svg {
   from {
     opacity: 0;
@@ -208,9 +182,4 @@ input:hover {
   color: var(--red);
   margin-top: 1rem;
   display: none;
-}
-.radio-error {
-  display: block;
-  color: var(--red);
-  margin-top: 1rem;
 }
