@@ -26,18 +26,18 @@
             <div class="first-name">
                 <label for="">First Name <sup>*</sup></label>
                 <input type="text" id="first-name">
-            <span class="first-name error">This field is required</span>
+                <span class="first-name error">This field is required</span>
 
             </div>
             <div class="first-name">
                 <label for="">Last Name <sup>*</sup></label>
                 <input type="text" id="last-name">
-            <span class="first-name error">This field is required</span>
+                <span class="first-name error">This field is required</span>
 
             </div>
         </div>
 
-        <div class="first-name email" >
+        <div class="first-name email">
             <label for="">Email Adress <sup>*</sup></label>
             <input type="text" id="email">
             <span class="first-name error">Please enter a valid email</span>
@@ -45,29 +45,30 @@
         <div>
             <p class="query-text">Query type <sup>*</sup></p>
         </div>
-        <div class="radio-container">
-
-            <div class="radio-input">
-                <div>
-                    <input type="radio">
-                    <label for="">General Enquiry</label>
+        <div>
+            <div class="radio-container">
+                <div class="radio-input">
+                    <div>
+                        <input type="radio" id="general-enquiry" name="query-type">
+                        <label for="">General Enquiry</label>
+                    </div>
                 </div>
-            </div>
-            <div class="radio-input">
-                <input type="radio">
-                <label for="">Sport Request</label>
+                <div class="radio-input">
+                    <input type="radio" id="support-request" name="query-type">
+                    <label for="">Support Request</label>
+                </div>
+                <span class="first-name error break">This field is required</span>
             </div>
         </div>
-        <div class="first-name email" >
-            <label for="">Message<sup>*</sup></label>
+
+
+        <div class="first-name email">
+            <label for="" id="label">Message<sup>*</sup></label>
             <input type="text" id="msg-input">
             <span class="first-name error">This field is required</span>
-
         </div>
-        <!-- <div class="name-container">
-        </div> -->
         <div class="checkbox">
-            <input type="checkbox">
+            <input type="checkbox" id="consent-checkbox">
             <label for="">
                 I constent to being contacted by team<sup>*</sup>
             </label>
