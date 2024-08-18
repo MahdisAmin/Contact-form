@@ -35,7 +35,7 @@ body {
   background-color: var(--white);
   border-radius: 0.5rem;
   height: auto;
-  margin: 150px 200px;
+  margin: 50px 200px;
   padding: 40px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
 }
@@ -89,7 +89,7 @@ input {
   border-color: var(--mediumgreen);
   cursor: pointer;
 }
-.radio-error{
+.radio-error {
   position: absolute;
   top: 50px;
 }
@@ -100,7 +100,7 @@ input {
 #msg-input {
   padding: 4px 8px 6rem;
 }
-#label{
+#label {
   margin-top: 2rem;
 }
 .checkbox {
@@ -191,4 +191,46 @@ input:hover {
   color: var(--red);
   margin-top: 1rem;
   display: none;
+}
+
+@media (max-width: 768px) {
+  .name-container,
+  .radio-container {
+    flex-wrap: wrap;
+  }
+  .radio-input {
+    width: 100%;
+    margin-bottom: 1rem;
+  padding: 2px 10px 12px;
+
+  }
+  input {
+    padding: 0.8rem;
+  }
+  .radio-error{
+    top:120px
+  }
+  #last{
+    margin-top: 20px;
+  }
+  #label{
+    margin-top: 20px;
+  }
+  .alert-msg{
+    width: 400px;
+  }
+  .success-msg-container {
+    font-size: 1rem;
+  }
+  .success-msg-container svg {
+  width: 25px;}
+  .alert-msg p{
+    font-size: .8rem;
+  }
+  .checkbox{
+    font-size: .9rem;
+  }
+  .checkbox input{
+    margin-right: 7px;
+  }
 }
