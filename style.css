@@ -30,7 +30,7 @@ body {
 }
 
 .card-container {
-  width:1440;
+  width:1440px;
   background-color: var(--white);
   border-radius: 0.5rem;
   height: auto;
