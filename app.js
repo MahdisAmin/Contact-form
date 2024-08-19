@@ -18,9 +18,7 @@ inputsArray.forEach((input) => {
     event.preventDefault();
   });
 });
-document.addEventListener("contextmenu", (e) => {
-  e.preventDefault();
-});
+
 const isEnailValid = (email) => {
   const emailPatern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailPatern.test(email);

@@ -22,7 +22,6 @@
 }
 
 body {
-  max-width: 1440px;
   background-color: var(--lightgreen);
   display: flex;
   justify-content: center;
@@ -31,7 +30,7 @@ body {
 }
 
 .card-container {
-  width: 100%;
+  width:1440;
   background-color: var(--white);
   border-radius: 0.5rem;
   height: auto;
@@ -193,7 +192,10 @@ input:hover {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  .card-container{
+    width: 375px;
+  }
   .name-container,
   .radio-container {
     flex-wrap: wrap;
